@@ -47,7 +47,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
     public class user {
       public Connection conectarBD(){
-```
 //4
         Connection conn = null;
         try{
@@ -84,7 +83,7 @@ import java.sql.Statement;
 //10
         return result;}
     }
-    
+    ```
 
 
 
