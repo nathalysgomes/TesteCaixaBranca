@@ -19,3 +19,8 @@ Não, ele não segue boas práticas de separações, o ideal seria otilizar MVC 
 
 As conexões utilizadas foram fechadas?
 Não, o ideal seria utlizar um "try-with-resources" nas declarações, para garantir que sejam fechadas corretamente.
+## Grafo de fluxo:
+## Cálculo de complexidade:
+## Sequências:
+
+
