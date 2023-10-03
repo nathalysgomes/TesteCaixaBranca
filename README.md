@@ -25,17 +25,17 @@ Não, o ideal seria utlizar um "try-with-resources" nas declarações, para gara
 
 ## Cálculo de complexidade:
 V(G) = E - N + 2
-V(G) = 11 - 9 + 2 =  4
+V(G) = 10 - 8 + 2 =  4
 
 V(G) = P + 1
 V(G) = 2 + 1
 V(G) = 3
 
 ## Sequências:
-Caminho (1) = 1-2,3-4-6,7-8,10,11
-Caminho (2) = 1-2,3-4-6,7-10,11
-Caminho (3) = 1-2,3-4-6,7-9-11
-Caminho (4) = 1-2,3-5-11
+Caminho (1) = 1-2,3-4-6,7-8,10
+Caminho (2) = 1-2,3-4-6,7-10
+Caminho (3) = 1-2,3-4-6,7-9-10
+Caminho (4) = 1-2,3-5-10
 
 ## Sequências no código:
 
