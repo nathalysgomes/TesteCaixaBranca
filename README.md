@@ -38,7 +38,7 @@ Caminho (3) = 1-2,3-4-6,7-9-10
 Caminho (4) = 1-2,3-5-10
 
 ## Sequências no código:
-
+```
 //1
 package testecaixabranca;
 import java.sql.Connection;
@@ -47,6 +47,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
     public class user {
       public Connection conectarBD(){
+```
 //4
         Connection conn = null;
         try{
