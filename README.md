@@ -1,6 +1,7 @@
 # TesteCaixaBranca
 ## Descrição
 Repositório criado para realizar teste de caixa branca, no código sugerido pelo professor. Deve ser respondido as seguintes perguntas:
+
 ## Erros de código:
 A documentação foi descrita no código?
 O código possuí apenas dois comentários: de início de instrução de SQL e fim da class. O ideal seria que o código tivesse a explicação sobre seus métodos e variáveis.
@@ -23,6 +24,56 @@ Não, o ideal seria utlizar um "try-with-resources" nas declarações, para gara
 <img src="/nbproject/grafo-fluxo.jpg">
 
 ## Cálculo de complexidade:
+V(G) = E - N + 2
+V(G) = 11 - 9 + 2 =  4
+
+V(G) = P + 1
+V(G) = 2 + 1
+V(G) = 3
+
 ## Sequências:
+Caminho (1) = 1-2,3-4-6,7-8,10,11
+Caminho (2) = 1-2,3-4-6,7-10,11
+Caminho (3) = 1-2,3-4-6,7-9-11
+Caminho (4) = 1-2,3-5-11
+
+## Sequências no código:
+
+
+##1.  package testecaixabranca;
+      import java.sql.Connection;
+      import java.sql.DriverManager;
+      import java.sql.ResultSet;
+      import java.sql.Statement;
+    public class user {
+      public Connection conectarBD(){
+        
+        Connection conn = null;
+        try{
+            Class.forName("com.mysql.Driver.Manager").newInstance();
+            String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123";
+            conn = DriverManager.getConnection(url);
+        }catch (Exception e) { }
+        return conn;} 
+    public String nome="";
+    public boolean result = false;
+    public boolean VerificarUsuario(String login, String senha){
+        String sql = "";
+        Connection conn = conectarBD();
+        //INSTRUÇÃO SQL
+        sql += "select nome from usuarios";
+        sql +="where login = " + "'" + login + "'";
+        sql += " and senha = " + "'" + senha + ";";
+        try{
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if(rs.next()){
+                result = true;
+                nome = rs.getString("nome");}
+            }catch (Exception e) { }
+        return result;}
+    }
+    
+
 
 
