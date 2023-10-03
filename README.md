@@ -39,7 +39,7 @@ Caminho (4) = 1-2,3-5-10
 
 ## Sequências no código:
 ```
-//1
+//1.
 package testecaixabranca;
 import java.sql.Connection;
 import java.sql.DriverManager;
